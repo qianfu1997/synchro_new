@@ -1,0 +1,1 @@
+python3 ./panopticapi/evaluation.py --gt_json_file ./data/coco/annotations/panoptic_val2017.json --pred_json_file ./result_p.json --gt_folder ./data/coco/annotations/panoptic_val2017/ --pred_folder ./results/

@@ -1,0 +1,7 @@
+# python tools/test.py configs/yolact/mask_rcnn_r50_fpn_1x.py ./work_dirs/paoptic_coco_mrcnn_r50_v1/epoch_12.pth --show
+# bash ./tools/dist_test.sh configs/yolact/mask_rcnn_r50_fpn_1x.py work_dirs/panoptic_coco_mrcnn_r50_v2/epoch_12.pth 8 --out results.pkl --eval bbox segm
+# bash ./tools/dist_test.sh configs/yolact/mask_rcnn_r50_fpn_1x_plus.py work_dirs/panoptic_coco_mrcnn_r50_plus_v1/epoch_12.pth 8 --out results.pkl --eval bbox segm
+# bash ./tools/dist_test.sh configs/panoptic/mask_rcnn_r50_fpn_1x_plus.py work_dirs/panoptic_coco_mrcnn_r50_1x_v2/epoch_12.pth 8 --out results.pkl --eval bbox segm
+
+# python tools/panoptic_test.py configs/panoptic/mask_rcnn_r50_fpn_1x_plus.py work_dirs/panoptic_coco_mrcnn_r50_v6/epoch_12.pth --result_path /home/data1/sxg/segmentation_workspace/panoptic/yolact_mmdetection/results/ --show_path /home/data1/sxg/segmentation_workspace/panoptic/yolact_mmdetection/show/ --json_out result_p.json --show
+bash ./tools/dist_panoptic_test.sh configs/panoptic/mask_rcnn_r50_fpn_1x_plus.py work_dirs/panoptic_coco_mrcnn_r50_v6/epoch_12.pth 8 --result_path /home/data1/sxg/segmentation_workspace/panoptic/yolact_mmdetection/results/ --json_out /home/data1/sxg/segmentation_workspace/panoptic/yolact_mmdetection/result_p.json --show_path /home/data1/sxg/segmentation_workspace/panoptic/yolact_mmdetection/show/ --show
